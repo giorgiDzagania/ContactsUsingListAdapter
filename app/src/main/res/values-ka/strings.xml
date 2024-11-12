@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_contact">კონტაქტის დამატება</string>
+    <string name="no_contacts_yet">ჯერ არ არის კონტაქტები</string>
+    <string name="username">მომხმარებლის სახელი:</string>
+    <string name="number">ნომერი:</string>
+    <string name="create">შექმნა</string>
+    <string name="not_valid_case">მომხმარებლის სახელი უნდა შეიცავდეს სიმბოლოებს და ნომერი უნდა იყოს მინიმუმ 9 ციფრი</string>
+</resources>

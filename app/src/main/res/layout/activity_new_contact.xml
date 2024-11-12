@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".presentation.NewContactActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_person_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/background_nevy_green_accent_oval"
+        android:padding="6dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contactUsernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_person_image"
+        app:layout_constraintStart_toStartOf="@+id/iv_person_image"
+        app:layout_constraintTop_toBottomOf="@+id/iv_person_image">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contactNumberLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/contactUsernameLayout"
+        app:layout_constraintStart_toStartOf="@+id/contactUsernameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/contactUsernameLayout">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/number"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/black_background_round_shape"
+        android:letterSpacing="0.02"
+        android:padding="16dp"
+        android:text="@string/create"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/contactNumberLayout"
+        app:layout_constraintStart_toStartOf="@+id/contactNumberLayout"
+        app:layout_constraintTop_toBottomOf="@+id/contactNumberLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

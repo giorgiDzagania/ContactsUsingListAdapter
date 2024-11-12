@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">ContactWithListAdapter</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="no_contacts_yet">no_contacts_yet</string>
+    <string name="username">Username:</string>
+    <string name="number">Number:</string>
+    <string name="create">Create</string>
+    <string name="not_valid_case">username must contain Characters and number must be at least 9 digit long</string>
+</resources>
